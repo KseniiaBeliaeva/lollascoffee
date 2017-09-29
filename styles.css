@@ -1,0 +1,22 @@
+body,
+html {
+    margin: 1% auto;
+}
+#container {
+    margin: 0 auto;
+}
+.header {
+    text-align: center;
+}
+.topMenu {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+}
+.topMenuItem {
+    flex-grow: 1;
+}
+.dishesSection {
+    border: 1px solid gray;
+    width: 25%;
+}
