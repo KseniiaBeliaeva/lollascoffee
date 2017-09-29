@@ -12,11 +12,33 @@ html {
     display: flex;
     list-style-type: none;
     width: 100%;
+    text-align: center;
+    padding: 0;
 }
 .topMenuItem {
     flex-grow: 1;
 }
+.menuSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
 .dishesSection {
-    border: 1px solid gray;
-    width: 25%;
+ width: 70%;
+ margin: 0 auto;
+}
+.dishesSection__name {
+    text-align: center;
+}
+.dishesSection__list {
+    padding: 3%;
+}
+.dishesSection__item {
+    padding: 2%;
+    list-style-type: none;
+    border-bottom: 1px dotted black;
+  }
+.dishSection__price {
+    float: right;
 }
