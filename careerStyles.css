@@ -1,0 +1,25 @@
+@import "styles.css";
+.vacancy__container{
+    display: flex;
+}
+.vacancy__wrap {
+    width: 20%;
+    margin: 5%;
+    padding: 2%;
+    border:1px solid gainsboro;
+}
+.vacancy__img {
+    width: 100%;
+}
+.vacancy__name {
+    text-align: center;
+}
+.vacancy__description{
+    text-align: justify;
+}
+.vacancy__skills{
+    text-align: center;
+    display: block;
+    margin: 5%;
+    font-weight: bold;
+}
