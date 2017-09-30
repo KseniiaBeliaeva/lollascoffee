@@ -1,12 +1,18 @@
-body,
-html {
-    margin: 1% auto;
+
+.header-background {
+    background-image: url("img/headerBackground.jpg");
+    background-position: bottom;
+    height: 200px;
+    text-align: center;
 }
 #container {
     margin: 0 auto;
 }
 .header {
-    text-align: center;
+    color: white;
+    font-family: 'Homemade Apple', cursive;
+    padding: 2%;
+    margin-top: 0;
 }
 .topMenu {
     display: flex;
@@ -18,12 +24,12 @@ html {
 .topMenuItem {
     flex-grow: 1;
 }
-.menuSection {
+/* .menuSection {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: stretch;
-}
+} */
 .dishesSection {
  width: 70%;
  margin: 0 auto;
@@ -41,4 +47,51 @@ html {
   }
 .dishSection__price {
     float: right;
+}
+
+@media screen and (max-width:320px) {
+    
+    .topMenu {
+    display: block;
+    font-size: 150%;
+    letter-spacing: 3px;
+    list-style-type: none;
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    border-top:1px solid gray;
+     }
+     .topMenuItem {
+         padding: 3%;
+         border-bottom: 1px solid gray;
+     }
+     .topMenuLink {
+         text-decoration: none;
+         font-size: initial;
+     }
+}
+
+@media screen and (max-width:480px) and (min-width: 321px) {
+    
+    .topMenu {
+    display: inline-flex;
+    font-size: 150%;
+    letter-spacing: 3px;
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    border-top:1px solid gray;
+     }
+     .topMenuItem {
+         border-bottom: 1px solid gray;
+         line-height: 2;
+     }
+     .topMenuLink {
+         text-decoration: none;
+         font-size: initial;
+     }
+
+
 }

@@ -3,7 +3,7 @@ class TopMenu extends React.Component {
     render() {
         let topMenuSection = this.props.topMenu.map((menuItem) =>
             <li key={menuItem.name} className="topMenuItem">
-                <a href={menuItem.link}>{menuItem.name}</a>
+                <a href={menuItem.link} className="topMenuLink">{menuItem.name}</a>
             </li>);
         return (
             <ul className="topMenu">
@@ -19,7 +19,9 @@ class News extends React.Component {
 
         return (
             <div>
-                <h1 className="header" >{this.props.main.cafeName}</h1>
+                <div className="header-background">
+                    <h1 className="header" >{this.props.main.cafeName}</h1>
+                </div>    
                 <TopMenu topMenu={this.props.main.topMenu} />
             </div>
         );

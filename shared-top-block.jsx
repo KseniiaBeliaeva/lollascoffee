@@ -1,17 +1,3 @@
-class Vacancy extends React.Component { 
-    render() { 
-        let aVacancies = this.props.avaliableVacancy;
-        return (
-            <div className="vacancy__wrap">
-                <h4 className="vacancy__name">{aVacancies.jobname}</h4>
-                <img className="vacancy__img" src={aVacancies.img} />
-                <i className="vacancy__skills">Skills & Experience:</i>
-                <p className="vacancy__description">{aVacancies.description}</p>
-            </div>
-        );
-    }
-}
-
 
 class TopMenu extends React.Component {
     render() {
@@ -29,19 +15,18 @@ class TopMenu extends React.Component {
 
 class Career extends React.Component {
 
+
     render() {
 
         return (
             <div>
-                <div className="header-background">
-                    <h1 className="header" >{this.props.main.cafeName}</h1>
-                </div>     
+                <h1 className="header" >{this.props.main.cafeName}</h1>
                 <TopMenu topMenu={this.props.main.topMenu} />
                 <div className="vacancy__container">
-                {this.props.main.job.map(position => 
-                    <Vacancy avaliableVacancy={position} key={position.jobname} />
+                    {this.props.main.job.map(position =>
+                        <Vacancy avaliableVacancy={position} key={position.jobname} />
                     )}
-                </div>    
+                </div>
             </div>
         );
     }
@@ -49,7 +34,7 @@ class Career extends React.Component {
 
 let main = {
     cafeName: "Lolla's coffee",
-    
+
     job:
     [
         {
