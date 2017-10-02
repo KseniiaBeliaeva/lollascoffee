@@ -1,0 +1,11 @@
+.iconImg {
+    display: block !important;
+    margin-bottom: 5%;
+}
+.details-text {
+    text-align: center;
+    padding:15px;
+}
+.contacts__wrap {
+    margin: 5%;
+}

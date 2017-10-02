@@ -24,6 +24,9 @@
 .topMenuItem {
     flex-grow: 1;
 }
+.active {
+    background-color: red;
+}
 /* .menuSection {
     display: flex;
     flex-wrap: wrap;

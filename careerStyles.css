@@ -4,8 +4,7 @@
     flex-wrap: wrap;
 }
 .vacancy__wrap {
-    width: 20%;
-    margin: 5%;
+    margin: 4% auto;
     padding: 2%;
     border:1px solid gainsboro;
 }
@@ -27,11 +26,11 @@
 }
 @media screen and (max-width: 320px) {
     .vacancy__wrap {
-        width: 100%;
+        width: 90%;
     }
 }
 @media screen and (max-width: 480px){
     .vacancy__wrap {
-       width: 80%;
+       width: 90%;
      }
 }

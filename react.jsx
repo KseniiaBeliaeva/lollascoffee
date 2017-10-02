@@ -37,11 +37,12 @@ class Root extends React.Component {
                 <div className="header-background">
                     <h1 className="header" >{this.props.main.cafeName}</h1>
                 </div>        
-                <TopMenu topMenu={this.props.main.topMenu} />
+                <TopMenu topMenu={this.props.main.topMenu}/>
                 <div className="menuSection">
                 {this.props.main.foodMenu.map(category =>
                     <DishesSection dishCategory={category} key={category.foodCategory} />
-                )
+                    )
+                        
                     }
                 </div>    
                 
