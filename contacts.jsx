@@ -6,7 +6,7 @@ class Address extends React.Component {
             let classValue = "iconImg fa fa-" + details.iconImage + "  fa-lg";
             return <i aria-hidden="true" className={classValue}
                 key={details.iconName}>
-                <i className="details-text">{details.text}</i>
+                <a className="details-text" href="{details.link}">{details.text}</a>
             </i>
         }
         );
@@ -40,28 +40,35 @@ let main = {
         {
             iconImage: "location-arrow",
             iconName: "address",
-            text: "1B Hobsons street, VIC, Geelong",
+            link: "1B Hobsons street, VIC, Geelong",
+            text: "1B Hobsons streer, VIC, Geelong",
+
         },
         {
             iconImage: "phone",
             iconName: "phone",
-            text: "1 800 800 88 883"
+            link: "1 800 800 88 883",
+            text: "1 800 800 88 883",
         },
         {
             iconImage: "facebook",
             iconName: "facebook",
-            text: "https://facebook.github.io/react/docs/components-and-props.html"
+            link: "https://facebook.github.io/react/docs/components-and-props.html",
+            text: "Facebook",
+
 
         },
         {
             iconImage: "twitter",
             iconName: "twitter",
-            text: "https://twitter.com/lollascoffee"
+            link: "https://twitter.com/lollascoffee",
+            text: "Twitter",
 
         },
         {
             iconImage: "map",
             iconName: "map",
+            text: "/--IMAGE OF A MAP HERE--/",
         },
     ]
 }

@@ -1,3 +1,5 @@
+
+
 class DishesSection extends React.Component { 
     render() {
         let fcategory = this.props.dishCategory;
@@ -31,9 +33,9 @@ class TopMenu extends React.Component {
 class Root extends React.Component {
     
     render() {
-        
         return (
             <div>
+
                 <div className="header-background">
                     <h1 className="header" >{this.props.main.cafeName}</h1>
                 </div>        
@@ -42,10 +44,10 @@ class Root extends React.Component {
                 {this.props.main.foodMenu.map(category =>
                     <DishesSection dishCategory={category} key={category.foodCategory} />
                     )
-                        
                     }
-                </div>    
-                
+                <div className="footer">{this.props.main.footer}</div>
+                </div>
+
             </div>
         );
     }
@@ -53,6 +55,7 @@ class Root extends React.Component {
 
 let main = {
     cafeName: "Lolla's coffee",
+    footer: "Copyright Kseniia Beliaeva 2017",
     topMenu: [
         {
         name: "Menu",
