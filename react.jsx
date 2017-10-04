@@ -1,4 +1,4 @@
-
+import TopMenu from "menu-block.jsx";
 
 class DishesSection extends React.Component { 
     render() {
@@ -16,19 +16,19 @@ class DishesSection extends React.Component {
     }
 }
 
-class TopMenu extends React.Component { 
-    render() {
-        let topMenuSection = this.props.topMenu.map((menuItem) =>
-            <li key={menuItem.name} className="topMenuItem">
-                <a href={menuItem.link} className="topMenuLink">{menuItem.name}</a>
-            </li>);
-        return (
-            <ul className="topMenu">
-                {topMenuSection}
-            </ul>
-        );
-    }
-}
+// class TopMenu extends React.Component { 
+//     render() {
+//         let topMenuSection = this.props.topMenu.map((menuItem) =>
+//             <li key={menuItem.name} className="topMenuItem">
+//                 <a href={menuItem.link} className="topMenuLink">{menuItem.name}</a>
+//             </li>);
+//         return (
+//             <ul className="topMenu">
+//                 {topMenuSection}
+//             </ul>
+//         );
+//     }
+// }
 
 class Root extends React.Component {
     
@@ -47,7 +47,7 @@ class Root extends React.Component {
                     }
                 <div className="footer">{this.props.main.footer}</div>
                 </div>
-
+        
             </div>
         );
     }
