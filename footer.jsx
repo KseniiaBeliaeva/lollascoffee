@@ -5,7 +5,7 @@ class Footer extends React.Component {
         return (
             <div className="footer__wrap">
                 <h4 className="footer__text">
-                    Copyright Kseniia Beliaeva 2017
+                 Kseniia Beliaeva 2017
                     </h4>
             </div>
         );

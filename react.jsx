@@ -19,20 +19,6 @@ class DishesSection extends React.Component {
     }
 }
 
-// class TopMenu extends React.Component { 
-//     render() {
-//         let topMenuSection = this.props.topMenu.map((menuItem) =>
-//             <li key={menuItem.name} className="topMenuItem">
-//                 <a href={menuItem.link} className="topMenuLink">{menuItem.name}</a>
-//             </li>);
-//         return (
-//             <ul className="topMenu">
-//                 {topMenuSection}
-//             </ul>
-//         );
-//     }
-// }
-
 class Root extends React.Component {
     
     render() {

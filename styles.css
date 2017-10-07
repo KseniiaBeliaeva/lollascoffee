@@ -25,25 +25,37 @@
     width: 100%;
     text-align: center;
     padding: 0;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 20px;
 }
 .topMenuItem {
     flex-grow: 1;
 }
+.topMenuLink {
+        text-decoration: none;
+        color:black;
+}
+.topMenuLink:hover {
+        text-decoration: none;
+        color: hsl(36, 100%, 50%);
+        box-shadow: 0px 3px 0px 0px;
+}
 .active {
     background-color: red;
 }
-/* .menuSection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: stretch;
-} */
+.menuSection {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+}
 .dishesSection {
  width: 70%;
  margin: 0 auto;
 }
 .dishesSection__name {
     text-align: center;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 700;
+
 }
 .dishesSection__list {
     padding: 3%;
@@ -63,6 +75,7 @@
 .footer__text {
     margin: 0; 
     padding: 3%;
+    font-family: 'Homemade Apple', cursive;
 }
 
 @media screen and (max-width:320px) {
@@ -86,6 +99,7 @@
          text-decoration: none;
          font-size: initial;
      }
+     
 }
 
 @media screen and (max-width:480px) and (min-width: 321px) {

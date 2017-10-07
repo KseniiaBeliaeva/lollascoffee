@@ -13,9 +13,13 @@
 }
 .vacancy__name {
     text-align: center;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 120%;
+
 }
 .vacancy__description{
     text-align: justify;
+     font-family: 'Source Serif Pro', serif;
 }
 .vacancy__skills{
     text-align: center;
@@ -25,6 +29,9 @@
 
 }
 @media screen and (max-width: 320px) {
+    .vacancy__container {
+        margin: 2%;
+    }
     .vacancy__wrap {
         width: 90%;
     }

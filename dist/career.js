@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 33);
+/******/ 	return __webpack_require__(__webpack_require__.s = 34);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -360,6 +360,20 @@ module.exports = invariant;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = __webpack_require__(15);
+} else {
+  module.exports = __webpack_require__(16);
+}
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /*
 object-assign
 (c) Sindre Sorhus
@@ -452,7 +466,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 };
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -476,7 +490,7 @@ module.exports = emptyObject;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -545,20 +559,6 @@ module.exports = warning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(15);
-} else {
-  module.exports = __webpack_require__(16);
-}
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -574,7 +574,7 @@ if (process.env.NODE_ENV === 'production') {
 
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(2);
-  var warning = __webpack_require__(5);
+  var warning = __webpack_require__(6);
   var ReactPropTypesSecret = __webpack_require__(8);
   var loggedTypeFailures = {};
 }
@@ -964,8 +964,8 @@ module.exports = getActiveElement;
  LICENSE file in the root directory of this source tree.
 */
 
-var f = __webpack_require__(3),
-    p = __webpack_require__(4);__webpack_require__(2);var r = __webpack_require__(1);
+var f = __webpack_require__(4),
+    p = __webpack_require__(5);__webpack_require__(2);var r = __webpack_require__(1);
 function t(a) {
   for (var b = arguments.length - 1, d = "Minified React error #" + a + "; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d" + a, e = 0; e < b; e++) d += "\x26args[]\x3d" + encodeURIComponent(arguments[e + 1]);b = Error(d + " for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name = "Invariant Violation";b.framesToPop = 1;throw b;
 }
@@ -1082,9 +1082,9 @@ if (process.env.NODE_ENV !== "production") {
 
     'use strict';
 
-    var objectAssign$1 = __webpack_require__(3);
-    var require$$0 = __webpack_require__(5);
-    var emptyObject = __webpack_require__(4);
+    var objectAssign$1 = __webpack_require__(4);
+    var require$$0 = __webpack_require__(6);
+    var emptyObject = __webpack_require__(5);
     var invariant = __webpack_require__(2);
     var emptyFunction = __webpack_require__(1);
     var checkPropTypes = __webpack_require__(7);
@@ -2821,11 +2821,11 @@ if (process.env.NODE_ENV === 'production') {
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
 
-var aa = __webpack_require__(6);__webpack_require__(2);var l = __webpack_require__(9),
-    n = __webpack_require__(3),
+var aa = __webpack_require__(3);__webpack_require__(2);var l = __webpack_require__(9),
+    n = __webpack_require__(4),
     ba = __webpack_require__(10),
     ca = __webpack_require__(1),
-    da = __webpack_require__(4),
+    da = __webpack_require__(5),
     ea = __webpack_require__(11),
     fa = __webpack_require__(12),
     ha = __webpack_require__(13),
@@ -5135,7 +5135,7 @@ module.exports = isNode;
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */if(process.env.NODE_ENV!=="production"){(function(){'use strict';var react=__webpack_require__(6);var invariant=__webpack_require__(2);var ExecutionEnvironment=__webpack_require__(9);var _assign=__webpack_require__(3);var EventListener=__webpack_require__(10);var require$$0=__webpack_require__(5);var hyphenateStyleName=__webpack_require__(22);var emptyFunction=__webpack_require__(1);var camelizeStyleName=__webpack_require__(24);var performanceNow=__webpack_require__(26);var propTypes=__webpack_require__(28);var emptyObject=__webpack_require__(4);var checkPropTypes=__webpack_require__(7);var shallowEqual=__webpack_require__(11);var containsNode=__webpack_require__(12);var focusNode=__webpack_require__(13);var getActiveElement=__webpack_require__(14);/**
+ */if(process.env.NODE_ENV!=="production"){(function(){'use strict';var react=__webpack_require__(3);var invariant=__webpack_require__(2);var ExecutionEnvironment=__webpack_require__(9);var _assign=__webpack_require__(4);var EventListener=__webpack_require__(10);var require$$0=__webpack_require__(6);var hyphenateStyleName=__webpack_require__(22);var emptyFunction=__webpack_require__(1);var camelizeStyleName=__webpack_require__(24);var performanceNow=__webpack_require__(26);var propTypes=__webpack_require__(28);var emptyObject=__webpack_require__(5);var checkPropTypes=__webpack_require__(7);var shallowEqual=__webpack_require__(11);var containsNode=__webpack_require__(12);var focusNode=__webpack_require__(13);var getActiveElement=__webpack_require__(14);/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -8792,8 +8792,8 @@ if (process.env.NODE_ENV !== 'production') {
 
 var emptyFunction = __webpack_require__(1);
 var invariant = __webpack_require__(2);
-var warning = __webpack_require__(5);
-var assign = __webpack_require__(3);
+var warning = __webpack_require__(6);
+var assign = __webpack_require__(4);
 
 var ReactPropTypesSecret = __webpack_require__(8);
 var checkPropTypes = __webpack_require__(7);
@@ -9363,7 +9363,7 @@ module.exports = function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 
 
@@ -9406,18 +9406,42 @@ class TopMenu extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* harmony default export */ __webpack_exports__["a"] = (TopMenu);
 
 /***/ }),
-/* 32 */,
-/* 33 */
+/* 32 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+
+
+class Footer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+    render() {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "div",
+            { className: "footer__wrap" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "h4",
+                { className: "footer__text" },
+                "Kseniia Beliaeva 2017"
+            )
+        );
+    }
+}
+/* harmony default export */ __webpack_exports__["a"] = (Footer);
+
+/***/ }),
+/* 33 */,
+/* 34 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__menu_block_jsx__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__footer_jsx__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__footer_jsx__ = __webpack_require__(32);
 
 
 
@@ -9482,7 +9506,7 @@ let main = {
     job: [{
         jobname: "Barmen",
         img: "img/job1.jpg",
-        description: "As commis barman you will be" + "delivering a smooth and exceptional service," + "you will have a passion for food and beverage," + "the guest experience and sharing your knowledge" + "with your team. As part of a talented team you will" + "work closely with the Bar Manager to continue to grow" + "the reputation of our Bar.A strong knowledge of wine," + "spirits and cocktails is essential for this role as is" + "a commitment to delivering exceptional guest service;" + "leading by example and developing skills and knowledge" + "within your team. You will be an excellent and confident" + "communicator with excellent interpersonal and communication" + "skills, and have a natural ability to motivate the team around" + "you.Experience of training would be beneficial within this role" + "and ideally you will have experience within a similar role in a" + "quality dining environment.To be considered for this role you" + " must be highly motivated, ideally you will have worked in a similar role."
+        description: "A strong knowledge of wine," + "spirits and cocktails is essential for this role as is" + "a commitment to delivering exceptional guest service;" + "leading by example and developing skills and knowledge" + "within your team. You will be an excellent and confident" + "communicator with excellent interpersonal and communication" + "skills, and have a natural ability to motivate the team around" + "you.Experience of training would be beneficial within this role" + "and ideally you will have experience within a similar role in a" + "quality dining environment." + " You must be highly motivated, ideally you will have worked in a similar role."
     }, {
         jobname: "Baker",
         img: "img/job2.jpg",
@@ -9494,33 +9518,6 @@ let main = {
     }]
 };
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Career, { main: main }), document.getElementById('career'));
-
-/***/ }),
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-
-
-class Footer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
-    render() {
-        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "div",
-            { className: "footer__wrap" },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "h4",
-                { className: "footer__text" },
-                "Copyright Kseniia Beliaeva 2017"
-            )
-        );
-    }
-}
-/* harmony default export */ __webpack_exports__["a"] = (Footer);
 
 /***/ })
 /******/ ]);

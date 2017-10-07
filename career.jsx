@@ -47,13 +47,7 @@ let main = {
         {
             jobname: "Barmen",
             img: "img/job1.jpg",
-            description: "As commis barman you will be" +
-            "delivering a smooth and exceptional service," +
-            "you will have a passion for food and beverage," +
-            "the guest experience and sharing your knowledge" +
-            "with your team. As part of a talented team you will" +
-            "work closely with the Bar Manager to continue to grow" +
-            "the reputation of our Bar.A strong knowledge of wine," +
+            description: "A strong knowledge of wine," +
             "spirits and cocktails is essential for this role as is" +
             "a commitment to delivering exceptional guest service;" +
             "leading by example and developing skills and knowledge" +
@@ -62,8 +56,7 @@ let main = {
             "skills, and have a natural ability to motivate the team around" +
             "you.Experience of training would be beneficial within this role" +
             "and ideally you will have experience within a similar role in a" +
-            "quality dining environment.To be considered for this role you" +
-            " must be highly motivated, ideally you will have worked in a similar role.",
+            "quality dining environment." +" You must be highly motivated, ideally you will have worked in a similar role.",
         },
         {
             jobname: "Baker",
