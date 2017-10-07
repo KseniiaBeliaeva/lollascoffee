@@ -1,17 +1,7 @@
-
-class TopMenu extends React.Component {
-    render() {
-        let topMenuSection = this.props.topMenu.map((menuItem) =>
-            <li key={menuItem.name} className="topMenuItem">
-                <a href={menuItem.link} className="topMenuLink">{menuItem.name}</a>
-            </li>);
-        return (
-            <ul className="topMenu">
-                {topMenuSection}
-            </ul>
-        );
-    }
-}
+import React from "react";
+import ReactDOM from "react-dom";
+import TopMenu from "./menu-block.jsx";
+import Footer from "./footer.jsx";
 
 class News extends React.Component {
 
@@ -23,6 +13,7 @@ class News extends React.Component {
                     <h1 className="header" >{this.props.main.cafeName}</h1>
                 </div>    
                 <TopMenu topMenu={this.props.main.topMenu} />
+                <Footer />
             </div>
         );
     }

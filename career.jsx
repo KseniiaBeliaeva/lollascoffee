@@ -1,3 +1,8 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import TopMenu from "./menu-block.jsx";
+import Footer from "./footer.jsx";
+
 class Vacancy extends React.Component { 
     render() { 
         let aVacancies = this.props.avaliableVacancy;
@@ -12,20 +17,6 @@ class Vacancy extends React.Component {
     }
 }
 
-
-class TopMenu extends React.Component {
-    render() {
-        let topMenuSection = this.props.topMenu.map((menuItem) =>
-            <li key={menuItem.name} className="topMenuItem">
-                <a href={menuItem.link} className="topMenuLink">{menuItem.name}</a>
-            </li>);
-        return (
-            <ul className="topMenu">
-                {topMenuSection}
-            </ul>
-        );
-    }
-}
 
 class Career extends React.Component {
 
@@ -42,6 +33,7 @@ class Career extends React.Component {
                     <Vacancy avaliableVacancy={position} key={position.jobname} />
                     )}
                 </div>    
+                <Footer />
             </div>
         );
     }
@@ -89,29 +81,6 @@ let main = {
             "quality.Always be learning & developing ideally have previous specialty" +
             "coffee experience be available weekends.Full Time and Part Time positions" +
             "available Breakfast and Lunch Tuesday - Sunday. ",
-        },
-    ],
-
-
-    topMenu:
-    [
-        {
-            name: "Menu",
-            link: "index.html",
-        },
-        {
-            name: "Gallery",
-            link: "gallery.html",
-        }, {
-            name: "Career",
-            link: "career.html",
-        }, {
-            name: "News",
-            link: "news.html",
-        },
-        {
-            name: "Contacts",
-            link: "contacts.html",
         },
     ],
 }

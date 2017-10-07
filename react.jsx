@@ -1,4 +1,7 @@
-import TopMenu from "menu-block.jsx";
+import React from "react";
+import ReactDOM from "react-dom";
+import TopMenu from "./menu-block.jsx";
+import Footer from "./footer.jsx";
 
 class DishesSection extends React.Component { 
     render() {
@@ -45,10 +48,10 @@ class Root extends React.Component {
                     <DishesSection dishCategory={category} key={category.foodCategory} />
                     )
                     }
-                <div className="footer">{this.props.main.footer}</div>
                 </div>
-        
+                <Footer />
             </div>
+            
         );
     }
 }
@@ -255,4 +258,5 @@ let main = {
           },
     ],
 };
-ReactDOM.render(<Root main={main} />, document.getElementById('container'));
+
+ReactDOM.render(<Root main={main} />, document.getElementById('root'));

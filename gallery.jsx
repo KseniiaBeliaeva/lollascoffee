@@ -1,17 +1,8 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import TopMenu from "./menu-block.jsx";
+import Footer from "./footer.jsx";
 
-class TopMenu extends React.Component {
-    render() {
-        let topMenuSection = this.props.topMenu.map((menuItem) =>
-            <li key={menuItem.name} className="topMenuItem">
-                <a href={menuItem.link} className="topMenuLink">{menuItem.name}</a>
-            </li>);
-        return (
-            <ul className="topMenu">
-                {topMenuSection}
-            </ul>
-        );
-    }
-}
 
 class Gallery extends React.Component {
     render() {
@@ -21,6 +12,7 @@ class Gallery extends React.Component {
                     <h1 className="header" >{this.props.main.cafeName}</h1>
                 </div>
                 <TopMenu topMenu={this.props.main.topMenu} />
+                <Footer /> 
             </div>
         );
     }
@@ -28,26 +20,5 @@ class Gallery extends React.Component {
 
 let main = {
     cafeName: "Lolla's coffee",
-    topMenu:
-    [
-        {
-            name: "Menu",
-            link: "index.html",
-        },
-        {
-            name: "Gallery",
-            link: "gallery.html",
-        }, {
-            name: "Career",
-            link: "career.html",
-        }, {
-            name: "News",
-            link: "news.html",
-        },
-        {
-            name: "Contacts",
-            link: "contacts.html",
-        },
-    ],
 }
 ReactDOM.render(<Gallery main={main} />, document.getElementById('gallery'));

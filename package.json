@@ -2,6 +2,7 @@
   "name": "lolascoffee",
   "version": "1.0.0",
   "main": "index.js",
+  
   "repository": "git@github.com:KseniiaBeliaeva/lollascoffee.git",
   "author": "Kseniia Beliaeva <ksenia.belyaewa@gmail.com>",
   "license": "MIT",

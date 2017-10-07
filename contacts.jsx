@@ -1,3 +1,7 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import TopMenu from "./menu-block.jsx";
+import Footer from "./footer.jsx";
 
 class Address extends React.Component { 
     render() {
@@ -27,7 +31,8 @@ class Contacts extends React.Component {
                     <h1 className="header">{this.props.cafeName}</h1>
                 </div>
                 <TopMenu topMenu={this.props.topMenu} />
-                <Address contacts={this.props.socialMediaDetails}/>
+                <Address contacts={this.props.socialMediaDetails} />
+                <Footer />
             </div>
         );
     }
