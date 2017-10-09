@@ -1,0 +1,16 @@
+.gallery__wrap {
+    margin: 0;
+}
+.gallery {
+    width:100%;
+}
+
+@media screen and (max-width:320px) {
+    .gallery__wrap {
+    margin-top: -7%;
+    padding: 2%;
+}
+    .gallery {
+        margin: 0 auto;
+    }
+}

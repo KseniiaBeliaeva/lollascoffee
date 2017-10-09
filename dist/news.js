@@ -9484,7 +9484,7 @@ let main = {
         name: "Career",
         link: "career.html"
     }, {
-        name: "News",
+        name: "news",
         link: "news.html"
     }, {
         name: "Contacts",

@@ -9449,6 +9449,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+class GalleryPhotos extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+    render() {
+        let imageGal = this.props.galleryImage;
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "gallery", src: imageGal.image, alt: imageGal.alt });
+    }
+}
+
 class Gallery extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     render() {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -9464,13 +9471,34 @@ class Gallery extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 )
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__menu_block_jsx__["a" /* default */], { topMenu: this.props.main.topMenu }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                { className: "gallery__wrap" },
+                this.props.main.galleryImgs.map(photo => __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(GalleryPhotos, { galleryImage: photo, key: photo.image }))
+            ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__footer_jsx__["a" /* default */], null)
         );
     }
 }
 
 let main = {
-    cafeName: "Lolla's coffee"
+    cafeName: "Lolla's coffee",
+    galleryImgs: [{
+        image: "img/cafe1.jpg",
+        alt: "coffee and a pot"
+    }, {
+        image: "img/cafe2.jpg",
+        alt: "cafe street view"
+    }, {
+        image: "img/cafe3.jpg",
+        alt: "business lunch, 2 persons"
+    }, {
+        image: "img/cafe4.jpg",
+        alt: "breakfast"
+    }, {
+        image: "img/cafe5.jpg",
+        alt: "wedding table"
+    }]
 };
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Gallery, { main: main }), document.getElementById('gallery'));
 

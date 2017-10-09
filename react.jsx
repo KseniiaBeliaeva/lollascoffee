@@ -11,7 +11,10 @@ class DishesSection extends React.Component {
                 <h3 className="dishesSection__name">{fcategory.foodCategory}</h3>
                 <ul className="dishesSection__list">
                     {fcategory.foodItems.map(dish =>
-                        <li className="dishesSection__item" key={dish.food}>{dish.food}<i className ="dishSection__price">{dish.price}</i></li>
+                        <li className="dishesSection__item" key={dish.food}>{dish.food}
+                            <i className="dishSection__price">{dish.price}</i>
+                            
+                        </li>
                     )}    
                 </ul>
             </div>
@@ -57,7 +60,7 @@ let main = {
             name: "Career",
             link: "career.html",
         }, {
-            name: "News",
+            name: "news",
             link: "news.html",
         },
         {

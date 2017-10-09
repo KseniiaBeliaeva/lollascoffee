@@ -3,7 +3,13 @@
 @import "galleryStyles.css";
 @import "contactsStyles.css";
 
-
+body,
+html {
+   margin:0;
+   padding:0;
+   height:100%;
+   min-height: 100%;
+}
 .header-background {
     background-image: url("img/headerBackground.jpg");
     background-position: bottom;
@@ -43,12 +49,9 @@
 .active {
     background-color: red;
 }
-.menuSection {
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-}
+
 .dishesSection {
- width: 70%;
+ width: 85%;
  margin: 0 auto;
 }
 .dishesSection__name {
@@ -98,8 +101,8 @@
      .topMenuLink {
          text-decoration: none;
          font-size: initial;
-     }
-     
+     } 
+    
 }
 
 @media screen and (max-width:480px) and (min-width: 321px) {
@@ -122,6 +125,11 @@
          text-decoration: none;
          font-size: initial;
      }
-
-
+}
+@media screen and (min-width:481px) and (max-width:680px) {
+     .menuSection {
+          border-bottom: 1px solid;
+          border-top: 1px solid;
+}
+     
 }
