@@ -1,1 +1,11 @@
 @import url("styles.css");
+
+.news__section {
+    text-align: center;
+}
+.news__gif {
+    margin: 0 5% 5%;
+}
+.news__header {
+font-family: 'Poiret One', cursive;
+}

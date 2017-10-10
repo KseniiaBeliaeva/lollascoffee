@@ -9450,6 +9450,27 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+class HappyHours extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+    render() {
+        let deal = this.props.superDeal;
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "div",
+            { className: "news__section" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "h5",
+                null,
+                deal.header
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "news__gif", src: deal.img }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "p",
+                null,
+                deal.specialDeal
+            )
+        );
+    }
+}
+
 class News extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 
     render() {
@@ -9467,6 +9488,12 @@ class News extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 )
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__menu_block_jsx__["a" /* default */], { topMenu: this.props.main.topMenu }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "h1",
+                null,
+                this.props.main.mainHeader
+            ),
+            this.props.main.happyHourss.map(deal => __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HappyHours, { superDeal: deal, key: deal.img })),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__footer_jsx__["a" /* default */], null)
         );
     }
@@ -9474,21 +9501,15 @@ class News extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 
 let main = {
     cafeName: "Lolla's coffee",
-    topMenu: [{
-        name: "Menu",
-        link: "index.html"
+    mainHeader: "Check out our super specials!",
+    happyHourss: [{
+        header: "Free drinks 8.30pm - 9.30pm*",
+        img: "img/happyhours.gif",
+        specialDeal: "Sed ut perspiciatis unde omnis iste natus error" + "sit voluptatem accusantium doloremque laudantium, totam rem " + "aperiam, eaque ipsa quae ab illo inventore veritatis et quasi " + "architecto beatae vitae dicta sunt explicabo"
     }, {
-        name: "Gallery",
-        link: "gallery.html"
-    }, {
-        name: "Career",
-        link: "career.html"
-    }, {
-        name: "news",
-        link: "news.html"
-    }, {
-        name: "Contacts",
-        link: "contacts.html"
+        header: "Free taco for orderd over $50",
+        img: "img/happyhours2.gif",
+        specialDeal: "Sed ut perspiciatis unde omnis iste natus error" + "sit voluptatem accusantium doloremque laudantium, totam rem " + "aperiam, eaque ipsa quae ab illo inventore veritatis et quasi " + "architecto beatae vitae dicta sunt explicabo"
     }]
 };
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(News, { main: main }), document.getElementById('news'));
