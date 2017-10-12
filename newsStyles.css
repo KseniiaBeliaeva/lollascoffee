@@ -2,10 +2,52 @@
 
 .news__section {
     text-align: center;
+    padding: 3%;
+
 }
 .news__gif {
-    margin: 0 5% 5%;
+    width: 100%;
 }
 .news__header {
 font-family: 'Poiret One', cursive;
+}
+.mainHeader {
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+}
+.mainHeader__sm {
+   font-family: 'Source Serif Pro', serif;
+      color:red;
+}
+.footer__wrap {
+    clear: both;
+}
+.news__wrapper {
+      display: flex;
+  }
+
+@media screen and (max-width:480px){
+  .news__gif {
+  width: 100%;
+}  
+.news__wrapper {
+    display: block;
+}
+ 
+}
+@media screen and (min-width:481px) and (max-width:680px){
+  .news__gif {
+  width: 100%;
+}  
+ 
+}
+
+@media screen and (min-width:681px) and (max-width:960px){
+
+}
+
+
+@media screen and (min-width:961px) and (max-width:1024px){
+  
+  
 }

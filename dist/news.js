@@ -9457,8 +9457,8 @@ class HappyHours extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component
             "div",
             { className: "news__section" },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "h5",
-                null,
+                "h3",
+                { className: "mainHeader__sm" },
                 deal.header
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "news__gif", src: deal.img }),
@@ -9489,11 +9489,15 @@ class News extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__menu_block_jsx__["a" /* default */], { topMenu: this.props.main.topMenu }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "h1",
-                null,
+                "h2",
+                { className: "mainHeader" },
                 this.props.main.mainHeader
             ),
-            this.props.main.happyHourss.map(deal => __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HappyHours, { superDeal: deal, key: deal.img })),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                { className: "news__wrapper" },
+                this.props.main.happyHourss.map(deal => __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HappyHours, { superDeal: deal, key: deal.img }))
+            ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__footer_jsx__["a" /* default */], null)
         );
     }

@@ -7,8 +7,9 @@ class GalleryPhotos extends React.Component {
     render() { 
         let imageGal = this.props.galleryImage;
         return (
-
+            <div className="gallery__item">
                 <img className="gallery" src={imageGal.image} alt={imageGal.alt} />
+                </div>
         );
     }
 }
@@ -35,7 +36,7 @@ let main = {
     galleryImgs: [
         {
            image: "img/cafe1.jpg",
-           alt: "coffee and a pot",
+           alt: "cup of coffee and a pot",
         },
         {
             image: "img/cafe2.jpg",

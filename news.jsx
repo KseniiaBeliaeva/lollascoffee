@@ -9,7 +9,7 @@ class HappyHours extends React.Component {
         let deal = this.props.superDeal;
         return (
             <div className="news__section">
-                        <h5>{deal.header}</h5>
+                        <h3 className="mainHeader__sm">{deal.header}</h3>
                         <img className="news__gif" src={deal.img} />
                         <p>{deal.specialDeal}</p>
             </div>    
@@ -28,10 +28,11 @@ class News extends React.Component {
                     <h1 className="header" >{this.props.main.cafeName}</h1>
                 </div>    
                 <TopMenu topMenu={this.props.main.topMenu} />
-                <h1>{this.props.main.mainHeader}</h1>
-                {this.props.main.happyHourss.map(deal => 
+                <h2 className="mainHeader">{this.props.main.mainHeader}</h2>
+                <div className="news__wrapper">{this.props.main.happyHourss.map(deal => 
                     <HappyHours superDeal={deal} key={deal.img}/>
                 )}
+                </div>    
 
                 <Footer />
              </div>

@@ -1,12 +1,24 @@
 @import url("styles.css");
 
 .gallery__wrap {
+    position: relative;
+    height: 400px;
+    padding: 0px;
     margin: 0;
 }
 .gallery {
-    width:100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
 }
-
+.gallery__showing {
+    opacity: 1;
+    z-index: 2;
+}
 @media screen and (max-width:320px) {
     .gallery__wrap {
     margin-top: -7%;
@@ -15,4 +27,9 @@
     .gallery {
         margin: 0 auto;
     }
+}
+
+
+@media screen and (min-width:680px)and (max-width:980px) {
+ 
 }
