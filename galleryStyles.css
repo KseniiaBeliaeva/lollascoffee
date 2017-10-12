@@ -1,5 +1,16 @@
 @import url("styles.css");
 
+#gallery {
+  min-height: 100%;
+  margin-bottom: -70px;
+}
+#gallery:after {
+  content: "";
+  display: block;
+}
+#gallery, .footer__wrap {
+    height: 70px;
+}
 .gallery__wrap {
     position: relative;
     height: 400px;
@@ -19,17 +30,39 @@
     opacity: 1;
     z-index: 2;
 }
+/* .footer__wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} */
 @media screen and (max-width:320px) {
     .gallery__wrap {
     margin-top: -7%;
     padding: 2%;
+    width: 100%;
+    height: 200px;
 }
     .gallery {
         margin: 0 auto;
     }
 }
 
+@media screen and (min-width:321px) and (max-width:480px) {
+ .gallery__wrap {
+ height: 300px; 
+}
+}
 
-@media screen and (min-width:680px)and (max-width:980px) {
- 
+@media screen and (min-width:680px)and (max-width:1024px) {
+ .gallery__wrap {
+   margin: 0 15%; 
+}
+}
+
+@media screen and (min-width:1025px) {
+ .gallery__wrap {
+   margin: 0 15%; 
+   height: 500px;
+}
 }

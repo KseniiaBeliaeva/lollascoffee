@@ -9,6 +9,7 @@ html {
    padding:0;
    height:100%;
    min-height: 100%;
+
 }
 .header-background {
     background-image: url("img/headerBackground.jpg");
@@ -53,11 +54,14 @@ html {
 .dishesSection {
  width: 85%;
  margin: 0 auto;
+ background-color:rgba(255, 230, 230, 0.12);
+ padding-top: 15px;
 }
 .dishesSection__name {
     text-align: center;
-    font-family: 'Source Serif Pro', serif;
     font-weight: 700;
+     font-family: 'Homemade Apple';
+
 
 }
 .dishesSection__list {
