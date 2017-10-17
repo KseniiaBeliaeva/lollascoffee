@@ -9420,7 +9420,7 @@ class Footer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             "div",
             { className: "footer__wrap" },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "h4",
+                "h5",
                 { className: "footer__text" },
                 "Kseniia Beliaeva 2017"
             )
@@ -9467,18 +9467,22 @@ class Gallery extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             null,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
-                { className: "header-background" },
+                { className: "main__wrapper" },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "h1",
-                    { className: "header" },
-                    this.props.main.cafeName
+                    "div",
+                    { className: "header-background" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "h1",
+                        { className: "header" },
+                        this.props.main.cafeName
+                    )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__menu_block_jsx__["a" /* default */], { topMenu: this.props.main.topMenu }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "div",
+                    { className: "gallery__wrap" },
+                    this.props.main.galleryImgs.map(photo => __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(GalleryPhotos, { galleryImage: photo, key: photo.image }))
                 )
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__menu_block_jsx__["a" /* default */], { topMenu: this.props.main.topMenu }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "div",
-                { className: "gallery__wrap" },
-                this.props.main.galleryImgs.map(photo => __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(GalleryPhotos, { galleryImage: photo, key: photo.image }))
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__footer_jsx__["a" /* default */], null)
         );

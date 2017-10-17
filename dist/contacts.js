@@ -9420,7 +9420,7 @@ class Footer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             "div",
             { className: "footer__wrap" },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "h4",
+                "h5",
                 { className: "footer__text" },
                 "Kseniia Beliaeva 2017"
             )

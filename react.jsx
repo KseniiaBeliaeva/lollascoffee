@@ -13,7 +13,6 @@ class DishesSection extends React.Component {
                     {fcategory.foodItems.map(dish =>
                         <li className="dishesSection__item" key={dish.food}>{dish.food}
                             <i className="dishSection__price">{dish.price}</i>
-                            
                         </li>
                     )}    
                 </ul>
@@ -27,7 +26,7 @@ class Root extends React.Component {
     render() {
         return (
             <div>
-
+               <div className="main__wrapper">
                 <div className="header-background">
                     <h1 className="header" >{this.props.main.cafeName}</h1>
                 </div>        
@@ -37,9 +36,11 @@ class Root extends React.Component {
                     <DishesSection dishCategory={category} key={category.foodCategory} />
                     )
                     }
-                </div>
+                    </div>
+                </div>    
                 <Footer />
             </div>
+            
             
         );
     }

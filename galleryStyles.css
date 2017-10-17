@@ -2,15 +2,8 @@
 
 #gallery {
   min-height: 100%;
-  margin-bottom: -70px;
 }
-#gallery:after {
-  content: "";
-  display: block;
-}
-#gallery, .footer__wrap {
-    height: 70px;
-}
+
 .gallery__wrap {
     position: relative;
     height: 400px;
@@ -63,6 +56,6 @@
 @media screen and (min-width:1025px) {
  .gallery__wrap {
    margin: 0 15%; 
-   height: 500px;
+   height: 700px;
 }
 }

@@ -18,12 +18,14 @@ class Gallery extends React.Component {
     render() {
         return (
             <div>
+                <div className="main__wrapper">
                 <div className="header-background">
                     <h1 className="header" >{this.props.main.cafeName}</h1>
                 </div>
                 <TopMenu topMenu={this.props.main.topMenu} />
                 <div className="gallery__wrap">{this.props.main.galleryImgs.map(photo => 
                     <GalleryPhotos galleryImage={photo} key={photo.image} />)}
+                    </div>
                     </div>
                 <Footer /> 
             </div>
